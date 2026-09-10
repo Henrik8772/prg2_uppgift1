@@ -25,14 +25,14 @@ while spela:
 
     resultat2 = spelare2.kasta()
 
-    if resultat1 > resultat2 and resultat1 != resultat2:
+    if resultat1 > resultat2:
         spelare1.vinn_runda()
         vinst = f"{spelare1.namn} vann denna runda!"
         if spelare1.poäng == 5:
             vinst = f"{spelare1.namn} vann hela spelet!!!"
             spela = False
 
-    elif resultat2 > resultat1 and resultat2 != resultat1:
+    elif resultat2 > resultat1:
         spelare2.vinn_runda()
         vinst = f"{spelare2.namn} vann denna runda!"
         if spelare2.poäng == 5:
