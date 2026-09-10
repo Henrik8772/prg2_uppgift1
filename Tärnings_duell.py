@@ -42,8 +42,7 @@ while spela:
         vinst = f"Ni rullade samma så det blev oavgjort"
 
     print(f"{spelare1.namn} rollar en  {resultat1}")
-    print(f"{spelare2.namn} rollar en  {resultat2}")
-    print("\n")
+    print(f"{spelare2.namn} rollar en  {resultat2}""\n")
     print(f"{vinst}""\n")
     print(f"{spelare1.namn}: {spelare1.poäng}")
     print(f"{spelare2.namn}: {spelare2.poäng}" "\n")
