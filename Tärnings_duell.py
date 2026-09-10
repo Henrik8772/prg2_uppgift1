@@ -13,7 +13,12 @@ class Spelare:
         return randint(1, 6)
 
     def vinn_runda(self):
+        global spela, vinst
+        vinst = f"{self.namn} vann denna runda"
         self.poäng += 1
+        if self.poäng == 5:
+            vinst = f"{self.namn} vann hela spelet!!!"
+            spela = False
 
 
 spelare1 = Spelare("James")
@@ -27,17 +32,9 @@ while spela:
 
     if resultat1 > resultat2:
         spelare1.vinn_runda()
-        vinst = f"{spelare1.namn} vann denna runda!"
-        if spelare1.poäng == 5:
-            vinst = f"{spelare1.namn} vann hela spelet!!!"
-            spela = False
 
     elif resultat2 > resultat1:
         spelare2.vinn_runda()
-        vinst = f"{spelare2.namn} vann denna runda!"
-        if spelare2.poäng == 5:
-            vinst = f"{spelare2.namn} vann hela spelet!!!"
-            spela = False
 
     else:
         vinst = f"Ni rullade samma så det blev oavgjort"
