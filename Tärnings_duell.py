@@ -21,8 +21,10 @@ class Spelare:
             spela = False
 
 
-spelare1 = Spelare("James")
-spelare2 = Spelare("Hames")
+spelare1_namn = input("Spelare ett heter: ")
+spelare2_namn = input("Spelare två heter: ")
+spelare1 = Spelare(spelare1_namn)
+spelare2 = Spelare(spelare2_namn)
 
 while spela:
 
@@ -43,5 +45,5 @@ while spela:
     print(f"{spelare2.namn} rollar en  {resultat2}")
     print("\n")
     print(f"{vinst}""\n")
-    print(spelare1.poäng)
-    print(f"{spelare2.poäng}" "\n")
+    print(f"{spelare1.namn}: {spelare1.poäng}")
+    print(f"{spelare2.namn}: {spelare2.poäng}" "\n")
